@@ -21,7 +21,7 @@ def cutme():
     for video in list_videos:
         name = path.basename(video).split(':')[0] + ".mp4"
         resized_path = path.join(COMPOSITION_DESTINATION, name)
-        # print(video)
+        print("Resizing Videos")
         subprocess.call(['ffmpeg', '-i', video, '-vf', 'scale={}:{},setdar=16:9'.format(canvas_width, canvas_height), '-y', resized_path])
 
 
@@ -29,7 +29,7 @@ def cut_left():
     for video in list_videos:
         name = path.basename(video).split(':')[0] + ".mp4"
         resized_path = path.join(COMPOSITION_DESTINATION, name)
-        print("cutting left")
+        print("Cutting Left")
 
         clip = Clip(resized_path)
         clip.fx('crop', {'left': 1280/2})
@@ -40,8 +40,7 @@ def cut_right():
     for video in list_videos:
         name = path.basename(video).split(':')[0] + ".mp4"
         resized_path = path.join(COMPOSITION_DESTINATION, name)
-        print("cutting Right")
-        # subprocess.call(['ffmpeg', '-i', video, '-vf', 'scale={}:{},setdar=16:9'.format(canvas_width, canvas_height), '-y', resized_path])
+        print("Cutting Right")
 
         clip = Clip(resized_path)
         clip.fx('crop', {'right': 1280/2})
@@ -56,6 +55,7 @@ def compose_right():
         clip_right = Clip(video)
         clips_right.append(clip_right)
 
+    print("Composing Right Videos")
     shuffle(clips_right)
 
     # play videos on top of each other
