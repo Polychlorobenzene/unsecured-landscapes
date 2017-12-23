@@ -62,6 +62,7 @@ h1#title-right-bottom {
   /*height: 100vh;*/
   overflow: scroll;
   background-color: #f3f3f3;
+  float: left;
 }
 
 .content-column {
@@ -95,6 +96,8 @@ h1#title-right-bottom {
   position: fixed;
   right: 0px;
   background-color: #212121;
+  min-width: 50% !important;
+  float: right;
 }
 
 #videoRight {

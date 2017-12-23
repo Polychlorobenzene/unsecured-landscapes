@@ -14,7 +14,7 @@ canvas_width = 1280
 canvas_height = 720
 
 list_videos = glob('./recorded_videos/*.mp4')
-list_videos_cut = [f for f in listdir(COMPOSITION_DESTINATION) if path.isfile(path.join(COMPOSITION_DESTINATION, f)) and '.mp4' in f]
+# list_videos_cut = [f for f in listdir(COMPOSITION_DESTINATION) if path.isfile(path.join(COMPOSITION_DESTINATION, f)) and '.mp4' in f]
 
 
 def cutme():
