@@ -61,6 +61,7 @@ def compose_right():
     # play videos on top of each other
     composition = Composition(clips_right, singletrack=True)
     composition.save(COMPOSITION_CROPPED_RIGHT + '/composition_right/videos_right.mp4')
+    
 
 cutme()
 cut_left()
