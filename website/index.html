@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Unsecured Landscapres</title>
+  <title>Unsecured Landscapes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -11,6 +11,8 @@
   <script type="text/javascript" src="scripts/jquery.fullPage.js"></script>
   <script type="text/javascript" src="scripts/main.js"></script>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="styles/favicon.ico" type="image/x-icon" />
+
 </head>
 
 
@@ -22,7 +24,7 @@
   <h1 id="title-right-bottom" class="about-btn">ABOUT</h1>
   <div id="about" class="hidden">
     <p>
-      Unsecured Landscapes is an exercise of juxtaposing moving images from nature places that are being surveillance by IP Cameras. The footage was taken from cameras founds on <a href="https://www.insecam.org/" target="_blank"> insecam</a>. This project was initiated during the Automating Video Class at ITP, NYU. Footage changes every 12 hours.
+      Unsecured Landscapes is an exercise of juxtaposing moving images from nature places that are being surveillance by IP Cameras. The footage is taken by a bot every 12 hours from cameras found at <a href="https://www.insecam.org/" target="_blank"> insecam</a>. This project was initiated during the Automating Video Class at ITP, NYU.
     </p>
     <p>Project made by <a href="http://www.matamala.info" target="_blank">@matamalaortiz</a> </p>
   </div>
@@ -30,14 +32,14 @@
   <div class="col-md-6 content-column">
 
     <div id="fullpage1">
-      
-      <div class="section" id="section1">
+
+      <div class="section active" id="section0">
         <div class="slide ">
-          <video src="http://165.227.66.228:8000/recorded_videos/recorded_videos_cut/recorded_videos_cut_left/Minnesota.mp4" autoplay loop width="740" height="560" id='videoLeft'></video>
+          <video src="http://165.227.66.228:8000/recorded_videos/recorded_videos_cut/recorded_videos_cut_left/Minnesota.mp4" autoplay loop muted width="740" height="560" id='videoLeft'></video>
         </div>
       </div>
 
-      <div class="section active" id="section0">
+      <div class="section" id="section1">
         <video src="http://165.227.66.228:8000/recorded_videos/recorded_videos_cut/recorded_videos_cut_left/Alberta.mp4" autoplay loop width="740" height="560" id='videoLeft'></video>
       </div>
       <div class="section" id="section1">
@@ -73,18 +75,18 @@
         </div>
       </div>
 
-      <div class="section" id="section1">
+      <!-- <div class="section" id="section1">
         <div class="slide ">
           <video src="http://165.227.66.228:8000/recorded_videos/recorded_videos_cut/recorded_videos_cut_left/Californa.mp4" autoplay loop width="740" height="560" id='videoLeft'></video>
         </div>
-      </div>
+      </div> -->
 
     </div>
   </div>
 
   <!-- RIGHT COLUMN -->
   <div class="col-md-6 right">
-    <video src="http://165.227.66.228:8000/recorded_videos/recorded_videos_cut/recorded_videos_cut_right/composition_right/videos_right.mp4" autoplay loop width="740" height="560" id='videoRight'></video>
+    <video src="http://165.227.66.228:8000/recorded_videos/recorded_videos_cut/recorded_videos_cut_right/composition_right/videos_right.mp4" autoplay loop  muted playsinline width="740" height="560" id='videoRight'></video>
   </div>
 </body>
 </html>

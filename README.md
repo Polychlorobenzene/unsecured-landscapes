@@ -1,0 +1,1 @@
+Unsecured Landscapes is an exercise of juxtaposing moving images from nature places that are being surveillance by IP Cameras. The footage is taken by a bot every 12 hours from cameras found at insecam. This project was initiated during the Automating Video Class at ITP, NYU.

@@ -57,6 +57,11 @@ h1#title-right-bottom {
   color: white;
 }
 
+
+h1#title-right-bottom:hover {
+  cursor: pointer;
+}
+
 .col-md-6.content-column {
   z-index: 3;
   /*height: 100vh;*/
